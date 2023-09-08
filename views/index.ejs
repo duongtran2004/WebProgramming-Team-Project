@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("partials/head", {title: "Home page"}) %>
+    <%- include("partials/head"); %>
 </head>
 <body>
-    <%- include('partials/header.ejs') %>
-    <%- include('partials/hero_section.ejs') %>
+    <%- include('partials/header.ejs'); %>
+    <%- include('partials/hero_section.ejs'); %>
+
+    <hr
+  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+
+<div class="flex justify-between">
+    <h1 class="headings">Our Product</h1>
+    <p>Check more</p>
+</div>
+
+
+<div class ="flex flex-wrap">
+    <%- include("partials/product_card.ejs"); %>
+    <%- include("partials/product_card.ejs"); %>
+    <%- include("partials/product_card.ejs"); %>
+</div>
+
+<hr
+class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+
+<div class="flex justify-between">
+    <h1 class="headings">Shop by Category</h1>
+    <p>Check more</p>
+</div>
+
+<div>
+    <%- include("partials/product_carousel_category.ejs"); %>
+</div>
+
 </body>
+
+<hr
+class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+
+<div class="flex justify-between">
+    <h1 class="headings">Shop by Brand</h1>
+    <p>Check more</p>
+</div>
+
+<div>
+    <%- include("partials/product_carousel_brand.ejs"); %>
+</div>
+
+</body>
+
 
 <footer class="bg-white dark:bg-gray-900">
     <%- include("partials/footer.ejs"); %>
