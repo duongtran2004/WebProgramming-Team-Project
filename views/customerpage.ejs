@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head"); %>
+</head>
+<body>
+    <%- include('partials/header.ejs'); %>
+    <div class="lg:grid lg:grid-cols-5 lg:gap-4">
+        <div class="lg:col-span-2">
+            <%- include('partials/filter_section.ejs'); %>
+        </div>
+        <div class="col-span-4 flex flex-wrap lg:col-span-3">
+            <%- include('partials/product_card'); %>
+            <%- include('partials/product_card'); %>
+            <%- include('partials/product_card'); %>
+            <%- include('partials/product_card'); %>
+            <%- include('partials/product_card'); %>
+            <%- include('partials/product_card'); %>
+        </div>
+      </div>
+
+
+   
+</body>
+
+<footer class="bg-white dark:bg-gray-900">
+    <%- include("partials/footer.ejs"); %>
+</footer>
